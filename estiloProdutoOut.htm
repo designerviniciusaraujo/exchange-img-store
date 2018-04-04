@@ -1,0 +1,20 @@
+ 
+<p255>
+ 
+ <div class="DivHomeProd" onclick="NoCascate('<URLProd>');">  
+
+  <!-- CHAMAR FUNÇÃO DE TROCA DE IMAGEM -->
+  <div class="DivImagemProDoble" id="dobleImage<IDProduto>"> 
+    <script>sF$.imagesExchange('<IDProduto>','<ImagemProdPri>','<ImagemProdDet>','<DescrURL>','<NomeProd>',[<ProdFiltersJS>]);</script>
+  </div>
+
+
+  <div class="DivHomeNomeProd">
+    <span class="HomeNomeProd font-regular"><NomeProd></span>
+  </div>
+  <div class="DivHomePriceProd" style="white-space:nowrap;">
+    <div id="idProdPrice<IDProduto>"><script>sF$.fnShowPrice(<PrecoNum>,<PrecoOri>,'<CodProd>',<MaxParcelasProdNum>,<IDProduto>);</script></div> 
+    <div class="PriceAVistaLista"><script>sF$.fnShowParcels(<PrecoNum>,<MaxParcelasProdNum>);</script><br><script>sF$.fnMostraDescontoHome(<PrecoNum>);</script></div>
+  </div>
+</div>
+</p255>
