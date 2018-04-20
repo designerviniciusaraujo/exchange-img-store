@@ -1,30 +1,15 @@
-.DivImagemProDoble {
-  position: relative;
+.DivImagemProDoble{ 
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
 }
-
-.DivImagemProDoble, .DivImagemProDoble img {
-  height: 150px;
-  min-height: 150px;
-  max-height: 150px;
-  width: 150px;
-  margin: 0 auto;
-  max-width: 100%;
-  padding: 5px 0;
+ 
+.DivImagemProDoble  {
+	transition: .6s; 
+	min-height: 150px;
+	max-height: 150px; 
+	margin: 0 auto; 
+	padding: 5px 0;
+	display: block; 
 }
-
-.DivImagemProDoble .imgTwo {
-  opacity: 0;
-  transition: .3s;
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  top: 5px;
-  left: 0;
-}
-
-.DivImagemProDoble .getimgTwo {
-  opacity: 1;
-  transition: .3s;
-  width: 150px;
-  height: 150px
-}
+ 
