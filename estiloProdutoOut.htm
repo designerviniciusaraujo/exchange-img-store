@@ -1,33 +1,34 @@
 <p255>
-<div>
-  <div class="HomeProd"  id="ActveimagesExch<IDProduto>">
-    <div class="DivHomeImagemProd">
-      <a id="various3<IDProduto>" class="button line-blue" data-rel="lightcase:myCollection" rel="nofollow" href="/listaprodutos.asp?idloja=<IDLoja>&sty=9&int=1&idproduto=<IDProduto>">
-        <div class="DivHomeSpy">
-          <img src="<PathTo file="images/iconfastpreviewspy.svg">" alt="FastPreview" width="30" height="30">
-          ESPIAR
-        </div>
-      </a>
-        <!-- CHAMAR FUNÇÃO DE TROCA DE IMAGEM -->
-    <div class="DivImagemProDoble" id="dobleImage<IDProduto>"> 
+<!---id="ActveimagesExch<IDProduto>-->
+  <div class="DivHomeProd" onclick="NoCascate('<URLProd>')">  
+    <div class="DivImagemProDoble" id="dobleImage<IDProduto>" style="border:1px solid #97c5ff;">
       <script>imagesExchange('<IDProduto>','<ImagemProdPri>','<ImagemProdDet>','<DescrURL>','<NomeProd>',[<ProdFiltersJS>]);</script>
+    </div> 
+    <div class="DivHomeNomeProd">
+      <span class="HomeNomeProd font-regular"><NomeProd></span>
     </div>
 
-    </div>
-    <p class="HomeNomeProd"><NomeProd></p>
-    <div class="DivHomePrice">
-      <div class="DivHomePriceProd" style="white-space:nowrap;">
-        <div id="idProdPrice<IDProduto>"><script>sF$.fnShowPrice(<PrecoNum>,<PrecoOri>,'<CodProd>',<MaxParcelasProdNum>,<IDProduto>);</script></div> 
-        <div class="PriceAVistaLista"><script>sF$.fnShowParcels(<PrecoNum>,<MaxParcelasProdNum>);</script><br><script>sF$.fnMostraDescontoHome(<PrecoNum>);</script></div>
-      </div>
-    </div>
-    <div>
-      <a href="<URLProd>">
-        <div class="DivHomeDet">+ MAIS DETALHES</div>  
-        <div id="RateProd<IDProduto>" class='RateProdHome'></div>
-        <script>sF$.reviewProd(<IDProduto>,<OpiniaoQtd>,'<OpiniaoMedia>');</script>
-      </a>
+    <div class="DivHomePriceProd" style="white-space:nowrap;">
+      <div id="idProdPrice<IDProduto>"><script>sF$.fnShowPrice(<PrecoNum>,<PrecoOri>,'<CodProd>',<MaxParcelasProdNum>,<IDProduto>);</script></div> 
+      <div class="PriceAVistaLista"><script>sF$.fnShowParcels(<PrecoNum>,<MaxParcelasProdNum>);</script><br><script>sF$.fnMostraDescontoHome(<PrecoNum>);</script></div>
     </div>
   </div>
-</div>
 </p255>
+
+
+<p254>
+<!---id="ActveimagesExch<IDProduto>-->
+  <div id="ActveimagesExch<IDProduto>" class="DivHomeProd" onclick="NoCascate('<URLProd>')" style="border:1px solid #97c5ff;">  
+    <div class="DivImagemProDoble" id="dobleImage<IDProduto>">
+      <script>imagesExchange('<IDProduto>','<ImagemProdPri>','<ImagemProdDet>','<DescrURL>','<NomeProd>',[<ProdFiltersJS>]);</script>
+    </div> 
+    <div class="DivHomeNomeProd">
+      <span class="HomeNomeProd font-regular"><NomeProd></span>
+    </div>
+
+    <div class="DivHomePriceProd" style="white-space:nowrap;">
+      <div id="idProdPrice<IDProduto>"><script>sF$.fnShowPrice(<PrecoNum>,<PrecoOri>,'<CodProd>',<MaxParcelasProdNum>,<IDProduto>);</script></div> 
+      <div class="PriceAVistaLista"><script>sF$.fnShowParcels(<PrecoNum>,<MaxParcelasProdNum>);</script><br><script>sF$.fnMostraDescontoHome(<PrecoNum>);</script></div>
+    </div>
+  </div>
+</p254>
