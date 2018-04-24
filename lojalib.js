@@ -1,4 +1,3 @@
- 
  function imagesExchange(sIdProd, sImagemProdPri, ImagemProdDet, sDescUrl, sNomeProd, ProdFiltersJS) {
   "use strict";
 
@@ -37,8 +36,8 @@
       }
     } else {
       if(getBoxProd) {
-        getImageBox.addEventListener("mouseenter", ActivehoverData);
-        getImageBox.addEventListener("mouseleave", inactivehoverData); 
+        getBoxProd.addEventListener("mouseenter", ActivehoverData);
+        getBoxProd.addEventListener("mouseleave", inactivehoverData); 
 
       } else {
 
