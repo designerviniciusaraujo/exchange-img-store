@@ -1,15 +1,24 @@
-.DivImagemProDoble{ 
+ /* ESTRUTURA */
+
+.DivImagemProDoble {
+	overflow: hidden;
+}
+
+.DivImagemProDoble, .DivImagemProDoble div {
+	max-width: 150px;
+	max-height: 150px;
+	min-height: 150px;
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
+	background-position: center;
+	margin: 0 auto;
 }
- 
-.DivImagemProDoble  {
-	transition: .6s; 
-	min-height: 150px;
-	max-height: 150px; 
-	margin: 0 auto; 
-	padding: 5px 0;
-	display: block; 
+
+.DivImagemProDoble div:last-child {
+	opacity: 0;
+	transition: 1s;
+	position: relative;
+	top: -150px;
+	z-index: -1;
 }
- 
