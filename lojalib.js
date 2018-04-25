@@ -1,4 +1,4 @@
- function imagesExchange(sIdProd, sImagemProdPri, ImagemProdDet, sDescUrl, sNomeProd, ProdFiltersJS) {
+function imagesExchange(sIdProd, sImagemProdPri, ImagemProdDet, sDescUrl, sNomeProd, ProdFiltersJS) {
   "use strict";
 
   var getImageBox = document.getElementById("dobleImage" + sIdProd);
@@ -54,14 +54,14 @@
     aPositionData = sDescUrl.split("=").length
     sImgName = sDescUrl.split("=")[aPositionData - 1].split(">")[0].slice(0, -1)
     return InnerData(sImgName);
-  } else if(ImagemProdDet) {
+  } else if(ImagemProdDet) { 
     // GET TYPE DETAILS  
     var detLenght = ImagemProdDet.split("/").length.toString() - 1;
-    var sgetImages = ImagemProdDet.split("/")[detLenght].split(',').length
-    if(sgetImages == 2) {
-      sValidate = ImagemProdDet.split("/")[detLenght].split(',')[1].split(".")[1];
-      if(sValidate == "png" || sValidate == "jpg" || sValidate == "svg") {
-        sImgName = ImagemProdDet.split("/")[detLenght].split(',')[1].toLowerCase();
+    var sgetImages = ImagemProdDet.split("/")[detLenght].split(',').length  
+    if(sgetImages == 2) { 
+      sValidate = ImagemProdDet.split("/")[detLenght].split(',')[1].split(".")[1].toLowerCase();  
+      if(sValidate == "png" || sValidate == "png" || sValidate == "jpg" || sValidate == "svg") {
+        sImgName = ImagemProdDet.split("/")[detLenght].split(',')[1].toLowerCase();  
         //console.log("HoverImageAtivo > Cadastrada em IMAGEMDETALHADA* > ", sImgName + sIdProd)
         return InnerData(sImgName);
       }
