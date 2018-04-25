@@ -16,9 +16,7 @@
 }
 
 .DivImagemProDoble div:last-child {
-	opacity: 0;
-	transition: 1s;
+	opacity:0; transition: 1s; 
 	position: relative;
-	top: -150px;
-	z-index: -1;
-}
+    bottom: 150px; 
+ }
